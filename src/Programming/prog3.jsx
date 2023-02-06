@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
-import { Container } from "../Container"
+import { Container, PreStyle } from "../Container"
 
 const Prog3 = () => {
     const [computers, setComputers] = useState(0)
@@ -27,7 +27,7 @@ const Prog3 = () => {
         <Container>
             <h3>Задача 3</h3>
             <p>Написать метод/функцию, который/которая на вход принимает число (int), а на выходе выдает слово “компьютер” в падеже, соответствующем указанному количеству. Например, «25 компьютеров», «41 компьютер», «1048 компьютеров».</p>
-            <pre>
+            <pre style={PreStyle}>
                 {`
                       const getWordForm = (number) => {
                         const lastTwoDigits = number % 100;
@@ -50,6 +50,7 @@ const Prog3 = () => {
                     `}
             </pre>
             <div>
+                <p>Введите число</p>
                 <input type="number" placeholder='enter number' style={{ width: '90px', }} onChange={(e) => { setComputers(e.target.value) }}
                 />
 

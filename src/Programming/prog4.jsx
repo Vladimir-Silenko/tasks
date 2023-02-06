@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container } from '../Container'
+import { Container, PreStyle } from '../Container'
 
 const Prog4 = () => {
     const [number, setNumber] = useState(0)
@@ -21,7 +21,7 @@ const Prog4 = () => {
         <Container>
             <h3>Задача 4</h3>
             <p>Написать метод/функцию, который/которая на вход принимает целое число, а на выходе возвращает то, является ли число простым (не имеет делителей кроме 1 и самого себя).</p>
-            <pre>
+            <pre style={PreStyle}>
                 {`
                       const simpleNumber = (num) => {
 

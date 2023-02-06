@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
-import { Container } from "../Container"
+import { Container, PreStyle } from "../Container"
 
 const Div = styled(Container)`
     display:flex;
@@ -27,7 +27,7 @@ const Prog2 = () => {
 
             </p>
             <Div>
-                <pre>
+                <pre style={PreStyle}>
                     {`
                         const RoundNumber = (num) => {
                             return Math.round(num / 5) * 5

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../Container'
+import { Container, PreStyle } from '../Container'
 
 const Prog5 = () => {
 
@@ -37,7 +37,7 @@ const Prog5 = () => {
 
             </p>
 
-            <pre>{`
+            <pre style={PreStyle}>{`
                             function elements(arr1, arr2) {
                                 const obj = {}
                                 const result = [];

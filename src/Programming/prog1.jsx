@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Container } from "../Container"
+import { Container, PreStyle } from "../Container"
 
 const Div = styled(Container)`
     display:flex;
@@ -19,7 +19,7 @@ const Prog1 = () => {
 
         </p>
         <Div>
-            <pre>
+            <pre style={PreStyle}>
                 {`
             const arr = ['Санкт-петербург', 'Москва', 'Екатеринбург', 'Ростов-на-дону']
 

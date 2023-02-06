@@ -38,3 +38,24 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  outline: none;
+  padding: 5px 20px;
+  margin: 20px;
+  font-size: 18px;
+  background: rgb(11, 98, 27);
+  background: linear-gradient(0deg, rgba(11, 98, 27, 1) 0%, rgba(163, 214, 163, 1) 49%, rgba(0, 116, 24, 1) 100%);
+}
+
+input {
+  width: 70px;
+  height: 20px;
+  padding: 4px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+input:focus {
+  background: rgb(232, 232, 232);
+}

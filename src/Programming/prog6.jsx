@@ -1,6 +1,6 @@
 
 import { useMemo, useState } from 'react';
-import { Container } from '../Container';
+import { Container, PreStyle } from '../Container';
 
 const Prog6 = () => {
     const [number, setNumber] = useState(0)
@@ -23,7 +23,7 @@ const Prog6 = () => {
             <p></p>
             <input type="number" placeholder='enter number' style={{ width: '90px', }} onChange={(e) => { setNumber(e.target.value) }}
             />
-            <pre>
+            <pre style={PreStyle}>
                 {`
                         const printMultiplicationTable = (n) => {
                             let maxLength = (n * n + '').length;
